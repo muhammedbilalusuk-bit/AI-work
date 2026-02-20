@@ -1,0 +1,31 @@
+{
+  "surahs": [
+    {
+      "number": 1,
+      "name": "الفاتحة",
+      "englishName": "Al-Fatihah",
+      "ayahs": [
+        { "numberInSurah": 1, "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "start": 0, "end": 4.5 },
+        { "numberInSurah": 2, "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ", "start": 4.5, "end": 8.8 },
+        { "numberInSurah": 3, "text": "الرَّحْمَٰنِ الرَّحِيمِ", "start": 8.8, "end": 12 },
+        { "numberInSurah": 4, "text": "مَالِكِ يَوْمِ الدِّينِ", "start": 12, "end": 15.2 },
+        { "numberInSurah": 5, "text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ", "start": 15.2, "end": 19.4 },
+        { "numberInSurah": 6, "text": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", "start": 19.4, "end": 23.5 },
+        { "numberInSurah": 7, "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ", "start": 23.5, "end": 30.5 }
+      ]
+    },
+    {
+      "number": 114,
+      "name": "الناس",
+      "englishName": "An-Nas",
+      "ayahs": [
+        { "numberInSurah": 1, "text": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ", "start": 0, "end": 2.8 },
+        { "numberInSurah": 2, "text": "مَلِكِ النَّاسِ", "start": 2.8, "end": 4.8 },
+        { "numberInSurah": 3, "text": "إِلَٰهِ النَّاسِ", "start": 4.8, "end": 6.6 },
+        { "numberInSurah": 4, "text": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ", "start": 6.6, "end": 9.8 },
+        { "numberInSurah": 5, "text": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ", "start": 9.8, "end": 13.2 },
+        { "numberInSurah": 6, "text": "مِنَ الْجِنَّةِ وَالنَّاسِ", "start": 13.2, "end": 15.5 }
+      ]
+    }
+  ]
+}
