@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'AmiriLocal';
+  src: url('/fonts/Amiri-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #111;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app.dark { background: #0d1117; color: #e6edf3; }
+.app.light { background: #f7f8fa; color: #1f2937; }
+.app.parchment { background: #f8f1da; color: #3f3120; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ffffff22;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: #00000033;
+  z-index: 10;
+}
+
+.controls { display: flex; gap: 1rem; flex-wrap: wrap; }
+label { display: grid; gap: 0.35rem; font-size: 0.85rem; }
+select { padding: 0.4rem; border-radius: 8px; }
+
+.center { padding: 3rem; text-align: center; }
+
+.splash {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.entry-card {
+  min-height: 220px;
+  border-radius: 18px;
+  border: 1px solid #ffffff44;
+  background: linear-gradient(155deg, #ffffff10, #ffffff02);
+  color: inherit;
+  text-align: left;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.reader-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.audio-panel {
+  border: 1px solid #ffffff33;
+  border-radius: 12px;
+  padding: 1rem;
+  align-self: start;
+}
+
+.audio-panel audio { width: 100%; }
+.audio-panel.muted { opacity: 0.7; }
+
+.quran-panel {
+  border: 1px solid #ffffff33;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.ayah-list { overflow-x: hidden !important; }
+
+.ayah-row {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 350ms ease, box-shadow 350ms ease;
+}
+
+.ayah-active {
+  background: #ffcc6655;
+  box-shadow: 0 0 14px #ffd26a99;
+}
+
+.ayah-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #ffffff55;
+}
+
+.ayah-text {
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  font-family: 'AmiriLocal', 'Scheherazade New', serif;
+  font-size: 1.45rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .splash, .reader-layout { grid-template-columns: 1fr; }
+}
